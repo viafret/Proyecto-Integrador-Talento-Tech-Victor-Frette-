@@ -1,0 +1,146 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    }
+
+body {
+        font-family: 'Roboto', sans-serif;
+        }
+
+header {
+            background-color: rgb(120, 179, 206);
+            }
+
+a {
+    text-decoration: none;
+}
+
+main {
+
+    background-color: rgb(251, 248, 239);
+
+            }
+h1 {
+
+    font-size: 100px;
+    color: blue;
+    
+}
+
+h3 {
+    text-align: center; /* Centramos el texto */
+    margin-top: 40px; /* Espacio superior */
+}
+
+p {
+    color: black;
+    font-size: 16px;
+    }
+
+footer {
+    padding: 20px; /* Espacio interno */
+    background-color: #f8f9fa; /* Color de fondo claro */
+    text-align: center; /* Centramos el contenido */
+    margin-top: 40px; /* Espacio superior antes del pie de página */
+}
+
+
+
+#formulario {
+    text-align: center;
+    font-size: 10px;
+}
+
+.subtitulo {
+    text-align: center;
+    font-size: 30px;
+}
+.productos {
+    display: flex; /* Activar Flexbox */
+    flex-wrap: wrap; /* Permitir que los productos se envuelvan */
+    justify-content: space-around; /* Distribuir los productos con
+    espacio entre ellos */
+    padding: 20px; /* Relleno interno */
+    }
+
+    .producto {
+        background-color: #2196F3; /* Fondo azul */
+        color: white; /* Color del texto */
+        padding: 20px; /* Relleno interno de cada producto */
+        margin: 10px; /* Margen externo de cada producto */
+        flex: 1 1 200px; /* Ajuste flexible: crece, encoge, tamaño
+        base 200px */
+        box-sizing: border-box; /* Incluir relleno y borde en el tamaño
+        total */
+        }
+.img_prod {
+        width: 200px;
+}
+.highlight {
+        background-color: rgb(249, 110, 42);
+        }
+
+.nav_list {
+    
+    display: flex;
+    padding: 10px 20px;
+    justify-content: space-between; /* Espaciamos los elementos a los lados */
+    align-items: center; /* Centramos verticalmente los elementos */
+    list-style : none;    
+    text-decoration : none;
+    color: rgb(204, 186, 186);
+    background-color: rgb(173, 170, 170);
+
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+    background-color: #eaeaea;
+    }
+
+/* Media Queries para pantallas medianas (tablets) */
+@media (max-width: 768px) {
+    /* Ajustamos el tamaño del logo */
+    .Logo {
+        max-width: 60px;
+    }
+    /* Las tarjetas se apilan verticalmente */
+    .productos {
+        flex-direction: column;
+        align-items: center;
+    }
+    /* Ajustamos el ancho de las tarjetas */
+    .producto {
+        width: 80%; /* Las tarjetas ocupan el 80% del ancho */
+    }
+    
+}
+
+/* Media Queries para pantallas pequeñas (celulares) */
+@media (max-width: 480px) {
+    /* Ajustamos el tamaño del logo */
+    .Logo {
+        max-width: 50px;
+    }
+    /* Ajustamos el ancho de las tarjetas */
+    .producto {
+        width: 90%; /* Las tarjetas ocupan el 90% del ancho */
+    }
+   
+    /* Ajustamos el tamaño del título */
+    .Titulo {
+        font-size: 20px;
+    }
+    /* Ajustamos los títulos  */
+    .subtitulo {
+        font-size: 20px;
+    }
+    /* Ajustamos el tamaño del pie de página */
+    footer p {
+        font-size: 16px;
+    }
+}
