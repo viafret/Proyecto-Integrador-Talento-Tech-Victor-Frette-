@@ -34,6 +34,10 @@ h1 {
     
 }
 
+h2 {
+    text-align: center;
+}
+
 h3 {
     text-align: center; /* Centramos el texto */
     margin-top: 40px; /* Espacio superior */
@@ -50,8 +54,6 @@ footer {
     text-align: center; /* Centramos el contenido */
     margin-top: 40px; /* Espacio superior antes del pie de página */
 }
-
-
 
 #formulario {
     text-align: center;
@@ -86,16 +88,22 @@ footer {
         base 200px */
         box-sizing: border-box; /* Incluir relleno y borde en el tamaño
         total */
+        align-items: center;
         }
 .img_prod {
-        width: 200px;
+   
+    width: 80px;
+}
+
+.linkProd {
+    color: rgb(15, 224, 239);
+    
 }
 .highlight {
         background-color: rgb(249, 110, 42);
         }
 
 .nav_list {
-    
     display: flex;
     padding: 10px 20px;
     justify-content: space-between; /* Espaciamos los elementos a los lados */

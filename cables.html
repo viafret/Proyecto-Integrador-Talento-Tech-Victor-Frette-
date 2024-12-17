@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Proyecto Integrador</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    </head>
+<body>
+    <header>
+        <img class="Logo" src="/img/electricity.png" alt="logo electrico">
+        <h1 class="Titulo">Proyecto Integrador</h1>
+        <a href="carrito.html" class="icono-carrito">🛒<span id="contador-carrito">0</span></a>
+    </header>
+    <nav>
+        <ul class="nav_list">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="sobrenos.html">Sobre nosotros</a></li>
+            <li><a href="sobrenos.html">Servicios</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+          </ul>
+    </nav>
+    <main>
+    <!--   seccion de productos -->
+    <section id="productos" class="productos">
+        <!--  producto con descripcion , precio y bton para agregar al carrito -->
+          <article class="producto">
+             <h2>Producto 1</h2>
+             <p>Descripcion del producto</p>
+             <p class="precio">$100</p>
+             <button onclick="agregarAlcarrito('Producto 1', 100)" >Agregar</button>
+          </article>
+ 
+                 <!--  producto con descripcion , precio y bton para agregar al carrito -->
+                 <article class="producto">
+                     <h2>Producto 2</h2>
+                     <p>Descripcion del producto 2</p>
+                     <p class="precio">$200</p>
+                     <button onclick="agregarAlcarrito('Producto 2', 200)" >Agregar</button>
+                  </article>
+ 
+        </section>
+ 
+  <script src="./index.js"></script>
+</main>
+    <footer class="highlight">
+        <p>Este es el pie de página con la información de contacto.</p>
+        <p>© 2024 Mi Sitio Web. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="codigo.js"></script>
+</body>
+</html>
