@@ -8,8 +8,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     </head>
 <body>
-    <header class="container">
-        <img class="Logo" src="/img/electricity.png" alt="logo electrico" width="150">
+    <header>
+        <img class="Logo" src="/img/electricity.png" alt="logo electrico">
         <h1 class="Titulo">Proyecto Integrador</h1>
         <a href="carrito.html" class="icono-carrito">🛒<span id="contador-carrito">0</span></a>
     </header>
@@ -46,12 +46,12 @@
                 </div>
             </section>
 
-        <h2 class="subtitulo">Video institucional</h2>
-            <section>
-                <video id="secVid" poster="/img/images.jpeg" width="400" controls> <source src="/video/videoplayback.mp4" type="video/mp4"> Tu navegador no soporta la reproducción de video.</video>
-            </section>
         
-
+        <h2 class="subtitulo">Video institucional</h2>
+            <section class="vid">
+                <video id="secVid" poster="/img/images.jpeg" width="600" controls> <source src="/video/videoplayback.mp4" type="video/mp4"> Tu navegador no soporta la reproducción de video.</video>
+            </section>
+                            
         <section id="formulario">
             <h2 class="subtitulo">Dejanos tu consulta</h2>
                 <form action="https://formspree.io/f/xpwzqvza" method="POST">
