@@ -71,7 +71,7 @@ footer {
     font-size: 30px;
     padding:15px;
 }
-.productos {
+.categorias {
     display: flex; /* Activar Flexbox */
     flex-wrap: wrap; /* Permitir que los productos se envuelvan */
     justify-content: space-around; /* Distribuir los productos con
@@ -79,7 +79,7 @@ footer {
     padding: 20px; /* Relleno interno */
     }
 
-    .producto {
+    .categoria {
         background-color: #2196F3; /* Fondo azul */
         color: white; /* Color del texto */
         padding: 20px; /* Relleno interno de cada producto */
@@ -126,6 +126,42 @@ footer {
     opacity: 0.7;
     width:120px;
 }
+
+.productos {
+    display: grid; /* Distribución en cuadrícula */
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Ajuste automático */
+    gap: 20px; /* Separación entre productos */
+    margin-top: 20px; /* Margen superior */
+}
+
+.producto {
+    background: #f4f4f4; /* Fondo claro */
+    padding: 15px; /* Espaciado interno */
+    border-radius: 5px; /* Bordes redondeados */
+    text-align: center; /* Texto centrado */
+}
+
+.producto h2 {
+    margin-bottom: 10px; /* Espacio inferior */
+}
+
+.producto .precio {
+    color: green; /* Texto en color verde */
+    font-size: 18px; /* Tamaño de fuente */
+}
+
+.producto button {
+    background: #333; /* Fondo oscuro */
+    color: white; /* Texto blanco */
+    border: none; /* Sin bordes */
+    padding: 10px 15px; /* Espaciado interno */
+    cursor: pointer; /* Mano al pasar por encima */
+}
+
+.producto button:hover {
+    background: #555; /* Cambio de color al pasar el cursor */
+}
+
 /* Media Queries para pantallas medianas (tablets) */
 @media (max-width: 768px) {
     /* Ajustamos el tamaño del logo */

@@ -1,9 +1,28 @@
-/* let num1 = parseInt(prompt (nombre + " Decime un numero para sumar "))
-let num2 = parseInt(prompt (nombre + " Decime Otro numero para sumar"))
-let resultado = num1+num2
-alert ("el resultado de tu operacion es " + resultado)
 
-let num3 = prompt (nombre + " Decime un numero para multiplicar")
-let num4 = prompt (nombre + " Decime Otro numero para multiplicar")
-let result = num3*num4
-alert ("el resultado de tu operacion es " + result)*/
+// variable global para almacenar los productos seleccionados
+let carrito = [];
+
+const agregarAlcarrito = (nombre,precio) =>{
+    //agregar el producto como un objeto al carrito
+    carrito.push({nombre,precio})
+
+    // actualizar el contador visual del carrito
+    actualizarContador()
+    // muestra un alerta de confirmacion
+    alert(`Agregaste : ${nombre} al carrito`)
+}
+
+
+// funcion para actualizar el contador del carrito
+const actualizarContador = ()=>{
+    //cambiamos el contenido del HTML con el ID contador-carrito
+    document.getElementById("contador-carrito").textContent = carrito.length
+
+}
+
+// Guarda el contenido del carrito en el almacenamiento local antes de cerrar la pagina
+
+window.addEventListener("beforeunload",()=>{
+localStorage.setItem("carrito",JSON.stringify(carrito))
+});
+
